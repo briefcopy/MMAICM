@@ -23,3 +23,16 @@ state-of-the-art algorithms.
 + Quoda Dataset: [https://github.com/briefcopy/MMAICM/tree/master/datasets/quora](https://github.com/briefcopy/MMAICM/tree/master/datasets/quora)
 + Zhihu Dataset: [https://github.com/briefcopy/MMAICM/tree/master/datasets/zhihu](https://github.com/briefcopy/MMAICM/tree/master/datasets/zhihu)
 
+The social network structure data and QA content data are organized into python objects by `pickle`.
+In terms of the image data, we provide the image urls instead of the raw image data since the image data is large for Github.
+The two datasets should be loaded as follows:
+
+```python
+#coding=utf-8
+
+import pickle
+
+data_path = "D:\\\\mygit\\MMAICM\\datasets\\quora\\network_with_content.p"
+with open(data_path, "rb") as f:
+    network = pickle.load(f)
+```
