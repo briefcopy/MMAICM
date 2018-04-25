@@ -29,10 +29,9 @@ The two datasets should be loaded as follows:
 
 ```python
 #coding=utf-8
-
 import pickle
 
-data_path = "D:\\\\mygit\\MMAICM\\datasets\\quora\\network_with_content.p"
+data_path = "quora/zhihu data file path"
 with open(data_path, "rb") as f:
     network = pickle.load(f)
 ```
