@@ -35,3 +35,11 @@ data_path = "quora/zhihu data file path"
 with open(data_path, "rb") as f:
     network = pickle.load(f)
 ```
+
+## Case Study
+### Attention Mechanism
+![](https://github.com/briefcopy/MMAICM/raw/master/images/case_study.png)
+
+### Qualitative Results
+![](https://github.com/briefcopy/MMAICM/raw/master/images/result.png)
+
